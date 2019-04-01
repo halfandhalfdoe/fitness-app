@@ -19,15 +19,10 @@
 -->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+    	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -35,15 +30,64 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
     </head>
+    
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+        <div class = "headerMenu"></div>
+
+		<div class = "profileCard">
+            <img src = "img/profilepic.png" id =profilePic>
+            <h1 id = profileName> Name </h1>
+
+			<div class="workOutRecorder">
+				<div class="weeklyRecord"> Week</div>
+				<div class="monthlyRecord"> Month</div>
+				<div class="allTimeRecord"> All Time</div>
             </div>
+            <div class = "levelSystem">
+            <div id = "numLevel"> 6 </div>
+            <div id = "levelBar"></div>
+            <img src = "img/daystreak.png" id= dayStreak>
+    <!-- Put number on dayStreak-->
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        </div>
+
+        <div class = "workoutMenu"> 
+            <a href = "#"> Link 1</a>
+            <a href = "#"> Link 2</a>
+            <a href = "#"> Link 3</a>
+            <a href = "#"> Link 4</a>
+            <a href = "#"> Link 5</a>
+        </div>
+
+
+
+
+
+
+		<div data-role="footer" id="navigatonBar" data-position="fixed" data-fullscreen="true" data-theme="b" class="ui-bar">
+			<a id = "HomeScreenButton" href="HomeScreen.html">
+			<img src = "img/HomeButton.png">
+			</a>
+			
+			<a id = "WeightLiftButton" href="WeightLift.html" >
+			<img src = "img/WeightLiftButton.png">
+			</a>
+			
+			<a id = "CalendarButton" href="Calendar.html" >
+			<img src = "img/CalendarButton.png">
+			</a>
+			
+			<a id = "AccountButton" href="Account.html" >
+			<img src = "img/AccountSettingsButton.png">
+			</a>
+			
+		</div>
+
+
+
+
+
+
     </body>
 </html>

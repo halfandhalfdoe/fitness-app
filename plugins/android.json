@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fitness.app"
+    },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.fitness.app"
     }
   },
   "dependent_plugins": {}

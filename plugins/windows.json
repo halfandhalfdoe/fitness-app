@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "GTApp"
+    },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "GTApp"
     }
   },
   "dependent_plugins": {}
